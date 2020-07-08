@@ -114,7 +114,7 @@ function rowRenderer({
 			>
 				{columns}
 			</div>
-			<div className="collapsibleContent hidden" style={{height: collapsibleHeight}}>
+			<div className="collapsibleContent" style={{height: collapsibleHeight}}>
 				Hello, I'm a collapsible row
 			</div>
 		</div>
