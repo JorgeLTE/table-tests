@@ -4,8 +4,8 @@ import { Column, Table } from 'react-virtualized';
 import 'react-virtualized/styles.css'; // only needs to be imported once
 
 function App() {
-	const [rowHeight,] = React.useState(90);
-	const [collapsibleHeight,] = React.useState(100);
+	const rowHeight = 90;
+	const collapsibleHeight = 100
 	const [openRow, setOpenRow] = React.useState(0);
 	const customRenderer = (props) => rowRenderer({...props, rowHeight, collapsibleHeight, openRow})
 	const getRowHeight = ({index}) => index === openRow ? rowHeight + collapsibleHeight : rowHeight;
